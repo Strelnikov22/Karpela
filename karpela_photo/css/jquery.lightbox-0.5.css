@@ -1,0 +1,241 @@
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.5.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.5
+ * @date April 11, 2008
+ * @category jQuery plugin
+ * @copyright (c) 2008 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CCAttribution-ShareAlike 2.5 Brazil - http://creativecommons.org/licenses/by-sa/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+.close{
+    display: none;
+}
+#jquery-overlay {
+
+}
+#jquery-lightbox {
+	 position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 7, 7, 0.59);
+    top: 0;
+    z-index: 50;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #fff;
+	width: 950px;
+	height: 480px;
+	margin: auto;
+    margin-top: 10px;
+    
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 50%;
+	height: 30px;
+	zoom: 1;
+	display: block;
+   
+}
+#lightbox-nav-btnPrev { 
+	left: -40px;
+    position: absolute;
+	float: left;
+    width: 100px;
+    top: 350px;
+}
+#lightbox-nav-btnNext { 
+	right: -110px;
+    position: absolute;
+	float: right;
+    width: 100px;
+    top: 350px;
+
+}
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 930px;
+	padding: 0 10px 0;
+}
+#lightbox-container-image-data {
+	padding: 0 10px; 
+	color: #666; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 70%; 
+	float: left; 
+	text-align: left; 
+}	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;	
+}			
+#lightbox-secNav-btnClose {
+	width: 66px; 
+	float: right;
+	padding-bottom: 0.7em;	
+}
+#lightbox-secNav{
+    display: block;
+    height: 20px;
+    padding: 10px;
+    position: absolute;
+    z-index: 200;
+    right: 0;
+}
+.comment>span{
+    float: left;
+    width: 360px;
+    text-align: left;
+    
+}
+.comment{
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+   
+
+}
+.data_like,.data_like>span,.data_like h5,.data_like img{
+    float: left;
+    text-align: left;
+    display: block;
+    margin: 5px 0;
+    
+}
+.data_like{
+    border-bottom: 1px solid #acacac;
+}
+.data_like>span{
+    margin-right: 10px;
+    font-size: 15px;
+}
+.data_like h5{
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.data_like img:active{
+   background-color: #fa0000;
+   
+}
+
+.user_comment{
+    width: 360px;
+    float: left;
+}
+.user_comment img{
+    
+    float: left;
+}
+.user_comment h3{
+    width: 250px;
+    float: left;
+    text-align: left;
+    margin-left: 20px
+}
+.user_comment span{
+    display: block;
+    width: 100px;
+    float: left;
+    margin-left: 20px;
+}
+.user_comment h4{
+    width: 250px;
+    display: block;
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+    color: #8d8d8d;
+    font-family: cursive;
+}
+.com_text h2{
+    text-align: left;
+    color: #619400;
+}
+.com_text textarea{
+    width: 310px;
+    float: left;
+    padding: 10px;
+}
+.otpravka{
+    padding: 7px;
+    width: 100px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    border: 0;
+    background-color: #619400;
+    color: white;
+}
+.com_text{
+    width: 360px;
+    float: left;
+}
+.optuons_right{
+    width: 135px;
+    float: left;
+    margin-top: -130px;
+    border-left: 1px solid #acacac;
+}
+.optuons_right ul{
+    list-style-type: none;
+    float: right;;
+    margin-left: -50px;
+}
+.optuons_right ul li{
+    margin-top:10px;
+    font-size: 13px;
+    text-align: left;
+    
+}
+.optuons_right ul li a{
+    text-decoration: none;
+    color: #000;
+
+}
+#lightbox-image{
+    position: absolute;
+    left: 220px;
+    height: 460px;
+}
+
+
+
+
+
+
+
